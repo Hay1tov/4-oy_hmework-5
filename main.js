@@ -333,7 +333,51 @@
 
 
 //                                                      No_19
+
+
+// function mostRepeatedNumber(arr) {
+//   let repeat = {};
+//   let mostFrequent = arr[0];
+//   let maxCount = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let element = arr[i];
+
+//     if (repeat[element]) {
+//       repeat[element]++;
+//     } else {
+//       repeat[element] = 1;
+//     }
+
+//     if (repeat[element] > maxCount) {
+//       maxCount = repeat[element];
+//       mostFrequent = element;
+//     }
+//   }
+
+//   return { element: mostFrequent, count: maxCount };
+// }
+
+// console.log(mostRepeatedNumber([7, 1, 9, 2, 4, 2, 8, 5, 6, 2]));
+
+
 //                                                      No_20
+
+
+// function getEvenArray(a) {
+//   let b = []
+
+//   for (let i = 0; i < a.length; i++) {
+//     if(a[i] % 2 == 0) {
+//       b.push(a[i])
+//     }
+//   }
+//   return b
+// }
+
+// console.log(getEvenArray([2, 3, 1, 8, 5, 9, 6, 3, 4, 5, 6, 1, 9]));
+
+
 //                                                      No_21
 //                                                      No_22
 //                                                      No_23
