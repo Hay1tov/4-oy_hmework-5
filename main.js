@@ -178,21 +178,160 @@
 //                                                      No_11
 
 
-function rangeOutSum(arr, K, L) {
-  if (K > L) {
-    return `K <= L shart asosida son kiritish kerak`
-  }
+// function rangeOutSum(arr, K, L) {
+//   let sum = 0
+//   if (K > L) {
+//     return `K <= L shart asosida son kiritish kerak`
+//   }
 
+//   for(const index in arr) {
+//     if(index < K || index > L) {
+//       sum += arr[index]
+//     }
+//   }
 
-}
+//   return sum
+
+// }
+
+// console.log(rangeOutSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 4, 6));
+
 
 //                                                      No_12
+
+
+// function filterTruthyFalsy(arr) {
+//   const Truthy = []
+//   const Falsy = []
+
+//   for(const value of arr) {
+//     if(value) {
+//       Truthy.push(value)
+//     }
+//     else {
+//       Falsy.push(value)
+//     }
+//   }
+//   return {Truthy, Falsy}
+// }
+
+// console.log(filterTruthyFalsy([10, false, "", "Abdulaziz", null]));
+
+
 //                                                      No_13
+
+
+// function getOddMin(arr) {
+//   let oddMin = arr[0]
+
+//   for(let i = 0; i <= arr.length-1; i += 2) {
+//     if(oddMin > arr[i]) {
+//       oddMin = arr[i]
+//     }
+//   }
+//   return oddMin
+// }
+
+// console.log(getOddMin([5, 7, 2, 9, 4, 1, 0]));
+
+
 //                                                      No_14
+
+
+// function getEvenMax(arr) {
+//   let evenMax = arr[0]
+
+//   for(let i = 1; i <= arr.length-1; i += 2) {
+//     if(evenMax < arr[i]) {
+//       evenMax = arr[i]
+//     }
+//   }
+//   return evenMax
+// }
+
+// console.log(getEvenMax([5, 7, 2, 9, 4, 1, 0, 12]));
+
+
 //                                                      No_15
+
+
+// function getLocalMax(arr) {
+//   let localMax = null
+
+//   for (let i = 1; i <= arr.length - 2; i++) {
+//     if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+//       localMax = arr[i]
+//     }
+//   }
+
+//   return localMax
+// }
+
+// console.log(getLocalMax([1, 3, 2, 5, 4, 6, 1]));
+
+
 //                                                      No_16
+
+
+// function getClosest(arr, R) {
+//   let closest = arr[0]
+//   let minDiff = Infinity
+
+//   for(let i = 0; i <= arr.length-1; i++) {
+//     let diff = Math.abs(arr[i] - R)
+//     if(diff < minDiff) {
+//       minDiff = diff
+//       closest = arr[i]
+//     }
+//   }
+//   return closest
+// }
+
+// console.log(getClosest([2, 5, 8, 14, 20], 7));
+
+
 //                                                      No_17
+
+
+// function largestNeighborPair(arr) {
+//   let maxSum = arr[0] + arr[1]
+//   first = null
+//   second = null
+
+//   for (let i = 1; i <= arr.length - 2; i++) {
+//     if (maxSum < arr[i] + arr[i + 1]) {
+//       maxSum = arr[i] + arr[i + 1]
+//       first = arr[i]
+//       second = arr[i + 1]
+//     }
+//   }
+//   return {first, second}
+// }
+
+// console.log(largestNeighborPair([3, 7, 2, 9, 5, 10, 8, 12]));
+
+
 //                                                      No_18
+
+
+// function findSameIndices(arr) {
+//   let firstIndex = null
+//   let secondIndex = null
+
+//   for(let i = 0; i <= arr.length-1; i++) {
+//     firstIndex = i
+//     for(let j = 0; j <= arr.length-1; j++) {
+//       if(arr[i] == arr[j] && i != j) {
+//         secondIndex = j
+//         return {firstIndex, secondIndex}
+//       }
+//     }
+//   }
+// }
+
+// console.log(findSameIndices([9, 7, 1, 2, 9]));
+
+
 //                                                      No_19
 //                                                      No_20
 //                                                      No_21
